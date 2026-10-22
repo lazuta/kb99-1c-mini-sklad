@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<InputField name="Ref" id="1">
+			<DataPath>Object.Ref</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="RefContextMenu" id="2"/>
+			<ExtendedTooltip name="RefExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Number" id="4">
+			<DataPath>Object.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="NumberContextMenu" id="5"/>
+			<ExtendedTooltip name="NumberExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Date" id="7">
+			<DataPath>Object.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="DateContextMenu" id="8"/>
+			<ExtendedTooltip name="DateExtendedTooltip" id="9"/>
+		</InputField>
+		<CheckBoxField name="Posted" id="10">
+			<DataPath>Object.Posted</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="PostedContextMenu" id="11"/>
+			<ExtendedTooltip name="PostedExtendedTooltip" id="12"/>
+		</CheckBoxField>
+		<CheckBoxField name="DeletionMark" id="13">
+			<DataPath>Object.DeletionMark</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="DeletionMarkContextMenu" id="14"/>
+			<ExtendedTooltip name="DeletionMarkExtendedTooltip" id="15"/>
+		</CheckBoxField>
+		<InputField name="Контрагент" id="16">
+			<DataPath>Object.Контрагент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КонтрагентContextMenu" id="17"/>
+			<ExtendedTooltip name="КонтрагентExtendedTooltip" id="18"/>
+		</InputField>
+		<InputField name="Комментарий" id="19">
+			<DataPath>Object.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийContextMenu" id="20"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="21"/>
+		</InputField>
+		<Table name="Товары" id="22">
+			<Representation>List</Representation>
+			<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.Товары</DataPath>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТоварыContextMenu" id="23"/>
+			<AutoCommandBar name="ТоварыCommandBar" id="24"/>
+			<ExtendedTooltip name="ТоварыExtendedTooltip" id="25"/>
+			<SearchStringAddition name="ТоварыSearchString" id="26">
+				<AdditionSource>
+					<Item>Товары</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыSearchStringContextMenu" id="27"/>
+				<ExtendedTooltip name="ТоварыSearchStringExtendedTooltip" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТоварыViewStatus" id="29">
+				<AdditionSource>
+					<Item>Товары</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыViewStatusContextMenu" id="30"/>
+				<ExtendedTooltip name="ТоварыViewStatusExtendedTooltip" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТоварыSearchControl" id="32">
+				<AdditionSource>
+					<Item>Товары</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыSearchControlContextMenu" id="33"/>
+				<ExtendedTooltip name="ТоварыSearchControlExtendedTooltip" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТоварыLineNumber" id="35">
+					<DataPath>Object.Товары.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТоварыLineNumberContextMenu" id="36"/>
+					<ExtendedTooltip name="ТоварыLineNumberExtendedTooltip" id="37"/>
+				</LabelField>
+				<InputField name="ТоварыТовар" id="38">
+					<DataPath>Object.Товары.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТоварыТоварContextMenu" id="39"/>
+					<ExtendedTooltip name="ТоварыТоварExtendedTooltip" id="40"/>
+				</InputField>
+				<InputField name="ТоварыКоличество" id="41">
+					<DataPath>Object.Товары.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТоварыКоличествоContextMenu" id="42"/>
+					<ExtendedTooltip name="ТоварыКоличествоExtendedTooltip" id="43"/>
+					<Events>
+						<Event name="OnChange">ТоварыКоличествоOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТоварыЦена" id="44">
+					<DataPath>Object.Товары.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТоварыЦенаContextMenu" id="45"/>
+					<ExtendedTooltip name="ТоварыЦенаExtendedTooltip" id="46"/>
+					<Events>
+						<Event name="OnChange">ТоварыЦенаOnChange</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТоварыСумма" id="47">
+					<DataPath>Object.Товары.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТоварыСуммаContextMenu" id="48"/>
+					<ExtendedTooltip name="ТоварыСуммаExtendedTooltip" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Поступление</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
